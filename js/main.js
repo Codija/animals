@@ -1,3 +1,10 @@
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 44.843456, lng: 20.407123},
+      zoom: 16
+    });
+}
 $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     var target = $(this.hash);
